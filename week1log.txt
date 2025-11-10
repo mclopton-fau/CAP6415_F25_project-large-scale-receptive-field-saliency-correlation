@@ -1,0 +1,12 @@
+Week 1 Development Log (November 3 - November 9, 2025)
+CAP6415 Computer Vision Project: Large-scale Receptive Field to Saliency Correlation Study
+
+1. Repository Initial Setup
+
+2. Literature Collection for Review Following Week
+
+3. Understanding the Problem
+
+4. Technology Stack Planning
+
+5. Datasets Early Investigation 
