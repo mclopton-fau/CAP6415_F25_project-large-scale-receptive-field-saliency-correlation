@@ -1,0 +1,30 @@
+Week 2 Development Log (November 10 - November 16, 2025)
+CAP6415 Computer Vision Project: Large-scale Receptive Field to Saliency Correlation Study
+
+1. Literature Review Completion
+   - Read through CAM and Grad-CAM papers collected last week
+   - Reviewed pytorch-grad-cam library documentation
+   - Found several tutorial examples on GitHub for reference
+   - Better understanding of how activation maps are generated
+
+2. Development Environment Setup
+   - Created requirements.txt with initial dependencies such as PyTorch, opencv-python, matplotlib, numpy (work in progress)
+   - Set up local Python environment for the project
+   - Tested PyTorch installation
+
+3. Code Planning and Initial Structure
+   - Sketched out main components needed: model loading, CAM generation, visualization
+   - Created placeholder Python files for organization
+   - Looked at example Grad-CAM implementations to understand workflow
+   - Identified that I'll start with ResNet50 as the base model
+
+4. Basic Testing
+   - Loaded a pre-trained ResNet50 model successfully
+   - Ran basic inference on a test image to verify model works
+   - Tested loading and displaying an eye-tracking heatmap
+   - Confirmed image dimensions and preprocessing requirements
+
+Challenges This Week:
+- Still getting familiar with the pytorch-grad-cam library API
+- Need to better understand how to properly normalize and visualize the heatmaps
+- Balancing this project with other coursework
