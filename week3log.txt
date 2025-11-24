@@ -1,0 +1,25 @@
+Week 3 Development Log (November 17 - November 23, 2025)
+CAP6415 Computer Vision Project: Large-scale Receptive Field to Saliency Correlation Study
+
+1. Dataset Acquisition
+   - Downloaded official SALICON dataset from challenge-2017 site
+   - Obtained validation images (5000 images) and corresponding saliency maps
+   - Organized into proper directory structure (images/val, maps/val)
+
+2. Core Module Implementation
+   - Completed gradcam_generator.py for model attention extraction
+   - Built salicon_loader.py for loading images and human saliency maps
+   - Implemented metrics.py with correlation and similarity measures
+   - Created visualization.py for side-by-side attention comparisons
+
+3. Pipeline Integration
+   - Developed compare_attention.py to tie all modules together
+   - Successfully processed first batch of 10 images
+   - Generated comparison visualizations and metrics CSV
+   - Initial results show Pearson correlations ranging from -0.25 to 0.62
+
+Next Steps for Week 4:
+- Run analysis on larger image set (50-100 images)
+- Analyze patterns in high vs low correlation cases
+- Begin documenting findings and updating README
+- Generate comprehensive results for preliminary report
