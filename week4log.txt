@@ -1,0 +1,31 @@
+Week 4 Development Log (November 24 - November 30, 2025)
+CAP6415 Computer Vision Project: Large-scale Receptive Field to Saliency Correlation Study
+
+1. Extended Analysis Run
+   - Processed 50 images from SALICON validation set
+   - Generated full set of comparison visualizations
+   - Collected comprehensive metrics across larger sample
+
+2. Results Analysis
+   - Analyzed correlation patterns across all processed images
+   - Identified high-agreement cases (correlation > 0.6)
+   - Identified low-agreement cases (correlation < 0.2)
+   - Examined what differentiates these cases
+
+3. Statistical Summary
+   - Computed mean/median/std for all metrics
+   - Generated distribution plots for Pearson correlation
+   - Noted average Pearson correlation across dataset
+   - Documented range and variance in results
+
+Key Findings:
+- Higher correlation on images with clear focal objects
+- Lower correlation on complex scenes with multiple subjects
+- Model shows some background bias compared to human attention
+- Results consistent with expected range for neural attention comparison
+
+Next Steps for Week 5:
+- Finalize all documentation
+- Record video demonstration
+- Complete final README with full results
+- Prepare for project submission
