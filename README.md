@@ -56,7 +56,7 @@ Model detects multiple players; humans focus on main action figure.
 **Low Agreement (Pearson r = -0.25)**  
 Model attention diffuses across texture; humans focus on semantic center.
 
-![Low Agreement Example](results/COCO_val2014_000000000397_comparison.png)
+![Low Agreement Example](https://github.com/mclopton-fau/CAP6415_F25_project-large-scale-receptive-field-saliency-correlation/blob/main/results/COCO_val2014_000000000397_comparison.png)
 
 ### Key Findings
 
@@ -130,5 +130,6 @@ python analyze_results.py
 
 
 Generates distribution plots and identifies high/low agreement cases.
+
 
 
