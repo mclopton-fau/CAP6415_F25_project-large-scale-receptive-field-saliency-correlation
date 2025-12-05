@@ -110,8 +110,3 @@ class GradCAMGenerator:
             return heatmap_resized, prediction_info
         
         return heatmap_resized
-
-
-if __name__ == "__main__":
-    # Quick test
-    generator = GradCAMGenerator(model_name='resnet50')

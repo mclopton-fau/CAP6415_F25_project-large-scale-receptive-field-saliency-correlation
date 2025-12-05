@@ -6,6 +6,12 @@ Key metrics:
 - Pearson/Spearman correlation: measure linear/rank relationship
 - Similarity (SIM): measures distribution overlap
 - KL/JS divergence: measures distribution difference
+
+References:
+- Bylinskii et al., "What do different evaluation metrics tell us about 
+  saliency models?" (TPAMI 2018)
+- MIT Saliency Benchmark: http://saliency.mit.edu/
+- Standard correlation metrics from scipy.stats
 """
 
 import numpy as np
@@ -146,15 +152,3 @@ def compute_all_metrics(human_heatmap, model_heatmap):
     metrics['js_divergence'] = jensen_shannon_divergence(human_heatmap, model_heatmap)
     
     return metrics
-
-
-if __name__ == "__main__":
-    # Quick check with random data
-    import numpy as np
-    h1 = np.random.rand(100, 100)
-    h2 = np.random.rand(100, 100)
-    
-    metrics = compute_all_metrics(h1, h2)
-    print("Metrics computed on random data:")
-    for key, value in metrics.items():
-        print(f"  {key}: {value:.4f}")

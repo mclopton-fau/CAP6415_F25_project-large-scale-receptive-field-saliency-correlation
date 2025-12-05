@@ -105,5 +105,4 @@ def run_analysis(n_images=10, data_root='data/salicon', output_dir='results'):
 
 
 if __name__ == "__main__":
-    # Run on 10 images to start
-    run_analysis(n_images=10, output_dir='results')
+    run_analysis(n_images=50, output_dir='results')

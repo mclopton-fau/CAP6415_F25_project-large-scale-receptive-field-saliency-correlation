@@ -146,8 +146,3 @@ def plot_heatmaps_only(human_heatmap, model_heatmap,
         plt.close()
     else:
         plt.show()
-
-
-if __name__ == "__main__":
-    print("Visualization module")
-    print("Use plot_comparison() to create side-by-side visualizations")

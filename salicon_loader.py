@@ -87,8 +87,3 @@ class SALICONDataset:
         image = self.load_image(idx)
         saliency_map = self.load_saliency_map(idx, normalize=True)
         return image, saliency_map
-
-
-if __name__ == "__main__":
-    print("SALICON loader module")
-    print("Use: dataset = SALICONDataset('data/salicon', split='val')")

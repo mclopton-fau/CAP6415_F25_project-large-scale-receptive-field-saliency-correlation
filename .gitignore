@@ -1,0 +1,19 @@
+# Dataset - too large for GitHub
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*~
