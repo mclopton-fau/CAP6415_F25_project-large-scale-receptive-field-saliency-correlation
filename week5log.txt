@@ -1,0 +1,20 @@
+Week 5 Development Log (December 1 - December 7, 2025)
+CAP6415 Computer Vision Project: Large-scale Receptive Field to Saliency Correlation Study
+
+1. Results Analysis and Visualization
+   - Visually analyzed patterns in 50 processed images
+   - Created statistical analysis analyze_results.py
+
+2. Documentation Completion
+   - Created README.md with abstract and methodology
+   - Added installation instructions and dataset download links
+   - Documented all references and attributions
+
+3. Repository Finalization
+   - Cleaned up code by removing test blocks
+   - Uploaded all code, results, and documentation to GitHub
+   - Verified all images and links display correctly in README
+
+4. Video Demonstration
+   - Prepared demonstration script covering methodology and results
+   - Recorded walkthrough of code execution and visualization
