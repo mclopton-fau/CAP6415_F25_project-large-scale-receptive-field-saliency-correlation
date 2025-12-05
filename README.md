@@ -123,10 +123,11 @@ This processes 50 images and generates:
 - Metrics CSV at `results/metrics.csv`
 - Summary statistics in console
 
-5. **Analyze results (optional):**
+5. **Analyze results:**
 ```bash
 python analyze_results.py
 ```
 
 
 Generates distribution plots and identifies high/low agreement cases.
+
