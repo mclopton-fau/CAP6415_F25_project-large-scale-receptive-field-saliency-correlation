@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This project compares human visual attention patterns with deep neural network attention mechanisms. I use the SALICON dataset (Jiang et al., 2015) for human eye-tracking saliency maps and Gradient-weighted Class Activation Mapping (Grad-CAM) to extract attention from a pre-trained ResNet50 CNN. The analysis of 50 images reveals moderate correlation (mean Pearson r=0.288) between human and model attention, with strong agreement on text-containing images and divergence on textured or multi-object scenes.
+My project looks at human visual attention patterns and compares it to deep neural network attention patterns. I used the SALICON dataset (Jiang et al., 2015) for human eye tracking saliency maps, and for deep neural networks I used Gradient-weighted Class Activation Mapping -- Grad-CAM -- to see attention from a pre-trained ResNet50 CNN model. I ran this for 50 images, which could be variable amount by adjusting the code, and it shows moderate correlation between human and model attention, with stronger agreement on text containing images, and divergence on textured or multi-object scenes.
 
 ## Problem and Approach
 
@@ -10,17 +10,17 @@ This project compares human visual attention patterns with deep neural network a
 
 **Solution:** 
 1. Load images and human saliency maps from SALICON dataset
-2. Generate model attention using Grad-CAM on pre-trained ResNet50
-3. Compute quantitative similarity metrics (Pearson correlation, Spearman correlation, similarity index)
-4. Visualize and analyze patterns of agreement/disagreement
+2. Generate model attention using Grad-CAM on a pre-trained ResNet50
+3. Compute similarity metrics using Pearson correlation, Spearman correlation, and similarity index
+4. Visualize (and analyze) patterns of agreement or disagreement
 
 ## Framework and Implementation
 
 **Frameworks:**
-- PyTorch 2.0+ (deep learning framework)
-- pytorch-grad-cam library (Grad-CAM implementation)
-- OpenCV, matplotlib (visualization)
-- NumPy, SciPy, pandas (analysis)
+- PyTorch 2.0+ for deep learning framework
+- pytorch-grad-cam library for Grad-CAM implementation
+- OpenCV, matplotlib for visualization
+- NumPy, SciPy, pandas for analysis
 
 **Code Base:**
 - Pre-trained ResNet50 from PyTorch torchvision model zoo
@@ -35,7 +35,7 @@ This project compares human visual attention patterns with deep neural network a
 |--------|------|---------|-----|-----|
 | Pearson Correlation | 0.288 | 0.226 | -0.251 | 0.702 |
 | Spearman Correlation | 0.394 | 0.239 | -0.217 | 0.709 |
-| Similarity (SIM) | 0.439 | 0.127 | 0.118 | 0.645 |
+| Similarity | 0.439 | 0.127 | 0.118 | 0.645 |
 
 ### Distribution of Metrics
 
@@ -44,25 +44,25 @@ This project compares human visual attention patterns with deep neural network a
 ### Example Comparisons
 
 **High Agreement (Pearson r = 0.70)**  
-Both human and model strongly attend to text/branding on the truck.
+Human and model strongly attend to text and branding on the truck.
 
 ![High Agreement Example](results/COCO_val2014_000000001799_comparison.png)
 
 **Medium Agreement (Pearson r = 0.62)**  
-Model detects multiple players; humans focus on main action figure.
+Model looks at multiple figures almost evenly, humans mostly focus on main figure.
 
 ![Medium Agreement Example](results/COCO_val2014_000000000192_comparison.png)
 
 **Low Agreement (Pearson r = -0.25)**  
-Model attention diffuses across texture; humans focus on semantic center.
+Model attention goes across texture and edges, humans focus on center and specific toppings.
 
 ![Low Agreement Example](https://github.com/mclopton-fau/CAP6415_F25_project-large-scale-receptive-field-saliency-correlation/blob/main/results/COCO_val2014_000000000397_comparison.png)
 
 ### Key Findings
 
-- **High agreement (r>0.6):** Images with text/branding (8% of images)
-- **Low agreement (r<0.2):** Textured or complex multi-object scenes (32% of images)
-- **Pattern:** Model attention tends to be more diffuse; human attention more focused on semantic objects
+- **High agreement (r>0.6):** Images with text and branding (8% of images)
+- **Low agreement (r<0.2):** Textured or complex scenes with many objects (32% of images)
+- **Pattern:** Model attention tends to be more spread evenly; human attention more focused on specific objects
 - **Text advantage:** Both humans and CNNs strongly attend to readable text in images
 
 ## References
@@ -130,6 +130,7 @@ python analyze_results.py
 
 
 Generates distribution plots and identifies high/low agreement cases.
+
 
 
 
