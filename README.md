@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This project compares human visual attention patterns with deep neural network attention mechanisms. I use the SALICON dataset (Jiang et al., 2015) for human eye-tracking saliency maps and Gradient-weighted Class Activation Mapping (Grad-CAM) to extract attention from a pre-trained ResNet50 CNN. Our analysis of 50 images reveals moderate correlation (mean Pearson r=0.288) between human and model attention, with strong agreement on text-containing images and divergence on textured or multi-object scenes.
+This project compares human visual attention patterns with deep neural network attention mechanisms. I use the SALICON dataset (Jiang et al., 2015) for human eye-tracking saliency maps and Gradient-weighted Class Activation Mapping (Grad-CAM) to extract attention from a pre-trained ResNet50 CNN. The analysis of 50 images reveals moderate correlation (mean Pearson r=0.288) between human and model attention, with strong agreement on text-containing images and divergence on textured or multi-object scenes.
 
 ## Problem and Approach
 
@@ -130,6 +130,7 @@ python analyze_results.py
 
 
 Generates distribution plots and identifies high/low agreement cases.
+
 
 
 
